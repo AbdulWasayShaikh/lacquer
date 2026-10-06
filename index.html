@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LACQUER — Detailing Studio, Karachi</title>
+<meta name="description" content="Paint correction, ceramic coating and paint protection film in Karachi. Every panel measured, corrected by hand and finished under studio light.">
+<meta name="theme-color" content="#08090B">
+<meta property="og:title" content="LACQUER — Detailing Studio, Karachi">
+<meta property="og:description" content="Paint correction, ceramic coating and PPF. Deeper than new.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  document.documentElement.classList.add('js');
+  setTimeout(function () { if (!window.__lq) document.documentElement.classList.add('ready'); }, 4000);
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="LACQUER home">LACQUER<span>Detailing Studio</span></a>
+  <nav class="links" aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#proof">Results</a>
+    <a href="#ppf">PPF</a>
+    <a href="#packages">Packages</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="#book">Book a slot</a>
+</header>
+
+<main>
+    <section class="journey" id="top">
+    <div class="stage">
+      <canvas id="carGL" aria-hidden="true"></canvas>
+      <div class="stage-fallback" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+      <div id="loader" aria-live="polite"><span>Loading studio</span><b id="loaderPct">0%</b></div>
+
+      <div class="callouts" aria-hidden="true">
+        <div class="callout" data-co="0"><i></i><span>Bonnet <b data-count="118">118</b> µm</span></div>
+        <div class="callout" data-co="1"><i></i><span>Roof <b data-count="109">109</b> µm</span></div>
+        <div class="callout" data-co="2"><i></i><span>Door <b data-count="124">124</b> µm</span></div>
+      </div>
+
+      <div class="beat" data-beat="0">
+        <p class="eyebrow">Detailing Studio · DHA, Karachi</p>
+        <h1 class="split">Deeper than new.</h1>
+        <p class="lede">Paint correction, ceramic coating and paint protection film, done one car at a time under 6,500K studio light.</p>
+        <div class="cta-row">
+          <a class="btn" href="#book">Book an inspection</a>
+          <a class="btn btn-ghost" href="#packages">See packages</a>
+        </div>
+      </div>
+      <div class="beat" data-beat="1">
+        <p class="eyebrow">01 · Inspect</p>
+        <h2 class="split">We measure before we touch.</h2>
+        <p>Paint depth is read on every panel, so we know exactly how much clear coat is safe to correct. Sample readings shown.</p>
+      </div>
+      <div class="beat" data-beat="2">
+        <p class="eyebrow">02 · Correct</p>
+        <h2 class="split">Swirls out. Gloss back.</h2>
+        <p>Watch the finish lift as the line passes over the car. Behind it, the clear coat is levelled and every reflection is sharp again.</p>
+      </div>
+      <div class="beat" data-beat="3">
+        <p class="eyebrow">03 · Protect</p>
+        <h2 class="split">Film on the front.</h2>
+        <p>Self-healing paint protection film takes the stone chips so the paint does not. The orange line marks where the film ends.</p>
+        <a class="btn btn-ghost" href="#ppf">Configure your PPF</a>
+      </div>
+      <div class="beat" data-beat="4">
+        <p class="eyebrow">04 · Coat</p>
+        <h2 class="split">Then we lock it in.</h2>
+        <p>A 9H ceramic coat over corrected paint. Water beads up and rolls off, and a rinse is enough to clean it.</p>
+        <dl class="mini"><div><dt>Hardness</dt><dd>9H</dd></div><div><dt>Rated</dt><dd>5 yrs</dd></div><div><dt>Cure</dt><dd>2 days</dd></div></dl>
+      </div>
+      <div class="beat" data-beat="5">
+        <p class="eyebrow">05 · Wheels &amp; glass</p>
+        <h2 class="split">Every detail, apart.</h2>
+        <p>Wheels, brake faces and glass are cleaned and coated separately, so brake dust and water spots wipe straight off.</p>
+      </div>
+      <div class="beat beat-ui" data-beat="6">
+        <p class="eyebrow">06 · Your colour</p>
+        <h2 class="split">Pick the paint.</h2>
+        <div class="swatches" role="radiogroup" aria-label="Preview colour">
+          <button role="radio" aria-checked="true" data-col="rosso" style="--c:#a1070b" aria-label="Rosso red"></button>
+          <button role="radio" aria-checked="false" data-col="nardo" style="--c:#8a8d92" aria-label="Nardo grey"></button>
+          <button role="radio" aria-checked="false" data-col="obsidian" style="--c:#0b0c0f" aria-label="Obsidian black"></button>
+          <button role="radio" aria-checked="false" data-col="midnight" style="--c:#10224d" aria-label="Midnight blue"></button>
+          <button role="radio" aria-checked="false" data-col="champagne" style="--c:#b89a62" aria-label="Champagne"></button>
+        </div>
+        <p class="note">Colour preview only. We correct and protect your car's factory paint as it is.</p>
+      </div>
+      <div class="beat" data-beat="7">
+        <p class="eyebrow">Ready when you are</p>
+        <h2 class="split">Book an inspection.</h2>
+        <p>Twenty minutes under our lights, free. We show you what the paint needs and quote on the spot.</p>
+        <div class="cta-row"><a class="btn" href="#book">Book a slot</a><a class="btn btn-ghost" href="#packages">See packages</a></div>
+      </div>
+
+      <div class="rail" aria-hidden="true"><i id="railFill"></i></div>
+      <p class="idx" aria-hidden="true"><b id="idxNow">01</b> / 08</p>
+      <a class="scroll-cue" href="#why">Scroll</a>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <p class="eyebrow rv">Why LACQUER</p>
+      <p class="statement rv">We do not wash cars fast. We <em>measure</em> the paint, <em>correct</em> it by hand, and <em>protect</em> it so the shine is still there next monsoon.</p>
+      <div class="facts">
+        <div class="fact rv"><b>µm</b><span>Paint depth read on every panel before a pad touches it</span></div>
+        <div class="fact rv"><b>6,500K</b><span>Daylight-balanced honeycomb lights, so nothing hides</span></div>
+        <div class="fact rv"><b>1</b><span>Car in the bay at a time. Yours.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Services</p>
+        <h2>What we do to your car</h2>
+      </div>
+      <div class="tabs rv" role="tablist" aria-label="Services">
+        <button role="tab" aria-selected="true" aria-controls="svc-panel" data-svc="0">Wash &amp; decon</button>
+        <button role="tab" aria-selected="false" aria-controls="svc-panel" data-svc="1">Paint correction</button>
+        <button role="tab" aria-selected="false" aria-controls="svc-panel" data-svc="2">Ceramic coating</button>
+        <button role="tab" aria-selected="false" aria-controls="svc-panel" data-svc="3">PPF</button>
+        <button role="tab" aria-selected="false" aria-controls="svc-panel" data-svc="4">Interior</button>
+      </div>
+      <div class="svc rv" id="svc-panel" role="tabpanel" aria-live="polite">
+        <div class="svc-copy">
+          <h3 id="svcTitle">Wash &amp; decontamination</h3>
+          <p id="svcText">A pH-neutral two-bucket hand wash, then iron fallout remover, tar remover and a clay bar. It strips what a normal wash leaves bonded to the paint, and it is the first step of every job we do.</p>
+          <ul id="svcList">
+            <li>Snow foam pre-wash and two-bucket hand wash</li>
+            <li>Iron fallout and tar removal</li>
+            <li>Clay bar on every painted panel</li>
+            <li>Wheels, arches and tyres cleaned off the car's paint</li>
+          </ul>
+        </div>
+        <dl class="svc-spec">
+          <div><dt>Time in bay</dt><dd id="svcTime">3–4 hours</dd></div>
+          <div><dt>Lasts</dt><dd id="svcLast">Until the next wash</dd></div>
+          <div><dt>From</dt><dd id="svcPrice">Rs 6,500</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" id="proof">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Results</p>
+        <h2>Drag the line. See the difference.</h2>
+        <p class="sub">The same car under our studio lights. Before: wash-induced swirls and haze. After: two-stage correction.</p>
+      </div>
+      <div class="ba rv" id="ba">
+        <canvas id="baGL" aria-hidden="true"></canvas>
+        <div class="ba-fallback" aria-hidden="true"></div>
+        <span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+        <div class="ba-handle" id="baHandle" aria-hidden="true"><i></i></div>
+        <input class="ba-range" id="baRange" type="range" min="4" max="96" value="50" aria-label="Before and after split position">
+      </div>
+      <div class="ba-controls rv">
+        <div class="chips" role="radiogroup" aria-label="Paint colour">
+          <button class="chip" role="radio" aria-checked="true" data-paint="obsidian" style="--c:#15171c">Obsidian black</button>
+          <button class="chip" role="radio" aria-checked="false" data-paint="nardo" style="--c:#7d8186">Nardo grey</button>
+          <button class="chip" role="radio" aria-checked="false" data-paint="rosso" style="--c:#8f1515">Rosso red</button>
+          <button class="chip" role="radio" aria-checked="false" data-paint="midnight" style="--c:#14244a">Midnight blue</button>
+        </div>
+        <button class="toggle" id="beadBtn" aria-pressed="false"><span></span>Show ceramic beading</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="ppf" id="ppf">
+    <div class="wrap ppf-grid">
+      <div class="ppf-copy">
+        <p class="eyebrow rv">Paint protection film</p>
+        <h2 class="rv">Choose how much of the car we wrap.</h2>
+        <p class="sub rv">Self-healing urethane film, cut to your exact model. Stone chips and light scratches go into the film instead of your paint.</p>
+        <fieldset class="opt rv">
+          <legend>Coverage</legend>
+          <div class="seg" id="covSeg">
+            <button aria-pressed="true" data-cov="partial">Partial front</button>
+            <button aria-pressed="false" data-cov="front">Full front</button>
+            <button aria-pressed="false" data-cov="track">Track pack</button>
+            <button aria-pressed="false" data-cov="full">Full body</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt rv">
+          <legend>Vehicle</legend>
+          <div class="seg" id="sizeSeg">
+            <button aria-pressed="false" data-size="hatch">Hatchback</button>
+            <button aria-pressed="true" data-size="sedan">Sedan</button>
+            <button aria-pressed="false" data-size="suv">SUV</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt rv">
+          <legend>Finish</legend>
+          <div class="seg" id="finSeg">
+            <button aria-pressed="true" data-fin="gloss">Gloss</button>
+            <button aria-pressed="false" data-fin="matte">Satin matte</button>
+          </div>
+        </fieldset>
+        <div class="quote rv">
+          <p class="q-label">Estimated price</p>
+          <p class="q-price" id="ppfPrice">Rs 95,000</p>
+          <p class="q-note" id="ppfNote">Bumper, headlights, front of bonnet, front of fenders, mirrors.</p>
+          <a class="btn" href="#book" id="ppfBook">Book this wrap</a>
+        </div>
+      </div>
+      <figure class="car rv" aria-label="Top view of a car showing the selected film coverage">
+        <svg viewBox="0 0 260 540" id="carSvg" role="img" aria-labelledby="carT">
+          <title id="carT">Coverage diagram</title>
+          <defs>
+            <clipPath id="body"><path d="M130 14c46 0 80 10 92 40 8 22 10 54 10 90v270c0 46-4 76-14 92-14 18-48 22-88 22s-74-4-88-22c-10-16-14-46-14-92V144c0-36 2-68 10-90 12-30 46-40 92-40z"/></clipPath>
+          </defs>
+          <path class="wheel" d="M22 92h14v56H22zM224 92h14v56h-14zM22 404h14v56H22zM224 404h14v56h-14z"/>
+          <g clip-path="url(#body)">
+            <rect class="z" data-z="bumper" x="0" y="0" width="260" height="58"/>
+            <rect class="z" data-z="hoodfront" x="38" y="58" width="184" height="46"/>
+            <rect class="z" data-z="hoodrest" x="38" y="104" width="184" height="84"/>
+            <rect class="z" data-z="fenderfront" x="0" y="58" width="38" height="50"/>
+            <rect class="z" data-z="fenderfront" x="222" y="58" width="38" height="50"/>
+            <rect class="z" data-z="fenderrest" x="0" y="108" width="38" height="80"/>
+            <rect class="z" data-z="fenderrest" x="222" y="108" width="38" height="80"/>
+            <rect class="z" data-z="pillar" x="38" y="188" width="184" height="16"/>
+            <rect class="z" data-z="roof" x="52" y="262" width="156" height="92"/>
+            <rect class="z" data-z="doors" x="0" y="188" width="38" height="190"/>
+            <rect class="z" data-z="doors" x="222" y="188" width="38" height="190"/>
+            <rect class="z" data-z="rocker" x="0" y="188" width="14" height="190"/>
+            <rect class="z" data-z="rocker" x="246" y="188" width="14" height="190"/>
+            <rect class="z" data-z="quarter" x="0" y="378" width="38" height="96"/>
+            <rect class="z" data-z="quarter" x="222" y="378" width="38" height="96"/>
+            <rect class="z" data-z="impact" x="0" y="378" width="38" height="26"/>
+            <rect class="z" data-z="impact" x="222" y="378" width="38" height="26"/>
+            <rect class="z" data-z="trunk" x="38" y="404" width="184" height="70"/>
+            <rect class="z" data-z="rear" x="0" y="474" width="260" height="66"/>
+          </g>
+          <path class="outline" d="M130 14c46 0 80 10 92 40 8 22 10 54 10 90v270c0 46-4 76-14 92-14 18-48 22-88 22s-74-4-88-22c-10-16-14-46-14-92V144c0-36 2-68 10-90 12-30 46-40 92-40z"/>
+          <path class="glass" d="M52 204c22-8 134-8 156 0l-8 56c-20-6-120-6-140 0z"/>
+          <path class="glass" d="M60 356c20 6 120 6 140 0l6 40c-24 8-128 8-152 0z"/>
+          <path class="line" d="M38 58c30 8 154 8 184 0M38 188h184M38 404h184M38 474c30-6 154-6 184 0M38 58v416M222 58v416"/>
+          <path class="line" d="M130 70v110" stroke-dasharray="3 5"/>
+          <g class="z" data-z="mirror"><ellipse cx="16" cy="214" rx="14" ry="9"/><ellipse cx="244" cy="214" rx="14" ry="9"/></g>
+          <g class="z lamp" data-z="lamp"><path d="M44 30c14-6 32-8 46-6l-4 14c-14 0-28 2-40 6z"/><path d="M216 30c-14-6-32-8-46-6l4 14c14 0 28 2 40 6z"/></g>
+          
+        </svg>
+        <figcaption>Highlighted panels get film. <span id="ppfCount">5</span> panel groups selected.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Packages</p>
+        <h2>Three ways in.</h2>
+        <p class="sub">Prices for a sedan. Hatchbacks are a little less, SUVs a little more. Final price after we read your paint.</p>
+      </div>
+      <div class="cards">
+        <article class="card rv">
+          <h3>Showroom Wash</h3>
+          <p class="price">Rs 6,500</p>
+          <p class="for">For a car that just needs to look right again.</p>
+          <ul>
+            <li>Snow foam and two-bucket hand wash</li>
+            <li>Iron, tar and clay decontamination</li>
+            <li>Spray sealant, about 6 weeks</li>
+            <li>Interior vacuum and wipe-down</li>
+          </ul>
+          <a class="btn btn-ghost" href="#book" data-pkg="Showroom Wash">Choose</a>
+        </article>
+        <article class="card card-hi rv">
+          <p class="flag">Most booked</p>
+          <h3>One-Step Correction</h3>
+          <p class="price">Rs 38,000</p>
+          <p class="for">For daily drivers with wash swirls and dull paint.</p>
+          <ul>
+            <li>Everything in Showroom Wash</li>
+            <li>Paint depth reading on every panel</li>
+            <li>Single-stage machine polish, most light swirls removed</li>
+            <li>Six-month sealant</li>
+          </ul>
+          <a class="btn" href="#book" data-pkg="One-Step Correction">Choose</a>
+        </article>
+        <article class="card rv">
+          <h3>Ceramic Armour</h3>
+          <p class="price">Rs 95,000</p>
+          <p class="for">For a car you plan to keep looking new for years.</p>
+          <ul>
+            <li>Two-stage paint correction</li>
+            <li>9H ceramic coating, rated for 5 years</li>
+            <li>Wheels, glass and trims coated too</li>
+            <li>First maintenance wash free at 3 months</li>
+          </ul>
+          <a class="btn btn-ghost" href="#book" data-pkg="Ceramic Armour">Choose</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">How a job runs</p>
+        <h2>Five steps, no shortcuts.</h2>
+      </div>
+      <ol class="steps">
+        <li class="rv"><b>01</b><h3>Inspect</h3><p>We walk the car with you under the lights and read paint depth on every panel.</p></li>
+        <li class="rv"><b>02</b><h3>Decontaminate</h3><p>Wash, iron removal and clay, so the polish only works on paint, not dirt.</p></li>
+        <li class="rv"><b>03</b><h3>Correct</h3><p>Machine polishing, panel by panel, taped off and checked against the 50/50 line.</p></li>
+        <li class="rv"><b>04</b><h3>Protect</h3><p>Ceramic, film or sealant, cured in the bay away from dust.</p></li>
+        <li class="rv"><b>05</b><h3>Hand over</h3><p>We show you the result under the same lights and explain how to wash it safely.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow">Owners</p>
+        <h2>What people say after pick-up.</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="rv"><p>“They showed me the swirls under their lights before starting. After the correction I honestly thought they had repainted the bonnet.”</p><cite>Hamza R. · Civic RS · One-Step Correction</cite></blockquote>
+        <blockquote class="rv"><p>“Full front PPF on a new Fortuner. Six months of Super Highway and not one chip on the bumper.”</p><cite>Sana K. · Fortuner · Full front PPF</cite></blockquote>
+        <blockquote class="rv"><p>“The ceramic is the real thing. Rain just slides off, and a rinse gets the dust off in five minutes.”</p><cite>Bilal A. · Corolla Altis · Ceramic Armour</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <div class="head rv">
+        <p class="eyebrow">FAQ</p>
+        <h2>Before you book.</h2>
+      </div>
+      <div class="qa">
+        <details class="rv"><summary>How long will you keep my car?</summary><p>A wash is same day. A one-step correction is one day. Ceramic Armour is two days, because the coating needs time to cure before the car goes back on the road. Full body PPF takes three to four days.</p></details>
+        <details class="rv"><summary>Will polishing thin out my paint?</summary><p>Every correction removes a few microns of clear coat, which is why we measure first. If a panel reads thin, we use a lighter pad and polish there, or we tell you it should be left alone.</p></details>
+        <details class="rv"><summary>Ceramic or PPF — which do I need?</summary><p>Ceramic gives gloss and makes the car easy to clean, but it will not stop a stone chip. PPF stops chips and light scratches. Many owners put PPF on the front and ceramic over the whole car.</p></details>
+        <details class="rv"><summary>Can you fix deep scratches?</summary><p>If your fingernail catches in it, the scratch has gone through the clear coat and polishing cannot remove it. We can make it much less visible, and we will tell you honestly before we start.</p></details>
+        <details class="rv"><summary>Do you pick up the car?</summary><p>Yes, inside DHA, Clifton and PECHS for corrections, ceramic and PPF jobs. Ask when you book.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div class="book-copy">
+        <p class="eyebrow rv">Book</p>
+        <h2 class="rv">Bring it in for a free paint inspection.</h2>
+        <p class="sub rv">Twenty minutes under our lights. We show you what the paint needs and quote on the spot. No pressure to book the work.</p>
+        <dl class="visit rv">
+          <div><dt>Studio</dt><dd>Khayaban-e-Ittehad, DHA Phase 6, Karachi</dd></div>
+          <div><dt>Hours</dt><dd>Tuesday to Sunday, 10 am to 8 pm</dd></div>
+        </dl>
+      </div>
+      <form class="form rv" id="bookForm" novalidate>
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>Phone / WhatsApp<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <label>Car make and model<input name="car" placeholder="e.g. Honda Civic 2022" required></label>
+        <label>Service
+          <select name="service" id="svcSelect">
+            <option>Free paint inspection</option>
+            <option>Showroom Wash</option>
+            <option>One-Step Correction</option>
+            <option>Ceramic Armour</option>
+            <option>PPF</option>
+            <option>Interior detail</option>
+          </select>
+        </label>
+        <label>Preferred day<input name="date" type="date"></label>
+        <label class="wide">Notes<textarea name="notes" rows="3" id="notes" placeholder="Anything we should know about the car"></textarea></label>
+        <button class="btn wide" type="submit">Request a slot</button>
+        <p class="demo wide">Demo form. Nothing is sent.</p>
+        <p class="ok wide" id="formOk" role="status" hidden>Thanks — in a live version, the studio would message you on WhatsApp to confirm a time.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <p class="foot-word" aria-hidden="true">LACQUER</p>
+    <div class="foot-cols">
+      <p>Detailing Studio · DHA Phase 6, Karachi</p>
+      <p><a href="#services">Services</a> · <a href="#ppf">PPF</a> · <a href="#packages">Packages</a> · <a href="#book">Book</a></p>
+      <p class="credit">Demo website designed and built by Abdul Wasay Shaikh</p>
+      <p class="credit">3D car model: Ferrari 458 Italia by vicent091036 (Sketchfab), via three.js examples</p>
+    </div>
+  </div>
+</footer>
+
+<script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js"}}</script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
